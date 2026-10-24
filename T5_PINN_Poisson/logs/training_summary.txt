@@ -1,0 +1,44 @@
+
+T5 PINN Training Summary
+===================================
+
+Task: PINN for 1D Poisson Equation
+
+1. Problem
+-u''(x) = pi^2 * sin(pi*x)
+Domain: 0 < x < 1
+Boundary conditions: u(0) = u(1) = 0
+Exact solution: u(x) = sin(pi*x)
+
+2. Model Configuration
+Network: MLP (1 -> 32 -> 32 -> 1)
+Activation: Tanh
+Optimizer: Adam
+Learning rate: 0.001
+Epochs: 3000
+Interior collocation points: 100
+Boundary points: 2
+Random seed: 42
+
+3. Loss Functions
+PDE loss: Mean squared PDE residual
+BC loss: Mean squared boundary error
+Total loss = PDE loss + BC loss
+
+4. Experimental Observations
+The total loss decreased during training.
+The PDE loss decreased to approximately 2e-5.
+The BC loss decreased to approximately 1e-9.
+The PINN prediction was close to the exact solution.
+The maximum absolute error was approximately 9e-5.
+
+5. Saved Figures
+results/sampling_points.png
+results/loss_curve.png
+results/solution_comparison.png
+results/absolute_error.png
+
+Note:
+The approximate values above were read from previous
+experiment figures. This is a training summary,
+not a newly captured terminal log.

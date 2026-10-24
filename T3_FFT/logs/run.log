@@ -1,0 +1,27 @@
+A_Decreasing: cutoff=10 Hz, MSE=0.666250
+A_Decreasing: cutoff=20 Hz, MSE=0.346250
+A_Decreasing: cutoff=35 Hz, MSE=0.166250
+A_Decreasing: cutoff=55 Hz, MSE=0.065000
+A_Decreasing: cutoff=80 Hz, MSE=0.020000
+A_Decreasing: cutoff=120 Hz, MSE=0.000000
+B_Equal: cutoff=10 Hz, MSE=2.500000
+B_Equal: cutoff=20 Hz, MSE=2.000000
+B_Equal: cutoff=35 Hz, MSE=1.500000
+B_Equal: cutoff=55 Hz, MSE=1.000000
+B_Equal: cutoff=80 Hz, MSE=0.500000
+B_Equal: cutoff=120 Hz, MSE=0.000000
+
+========== Comparison ==========
+Cutoff | Decreasing MSE | Equal MSE
+    10 | 0.666250       | 2.500000
+    20 | 0.346250       | 2.000000
+    35 | 0.166250       | 1.500000
+    55 | 0.065000       | 1.000000
+    80 | 0.020000       | 0.500000
+   120 | 0.000000       | 0.000000
+
+55 Hz low/high comparison:
+Group A: low MSE=0.0650, high MSE=1.1013
+Group B: low MSE=1.0000, high MSE=2.0000
+
+T3 comparison completed!

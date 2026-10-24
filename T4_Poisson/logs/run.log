@@ -1,0 +1,5 @@
+n=10, h=0.10000, Max Error=0.00826542
+n=20, h=0.05000, Max Error=0.00205871
+n=40, h=0.02500, Max Error=0.00051420
+n=80, h=0.01250, Max Error=0.00012852
+T4 completed! Figures saved in results/
