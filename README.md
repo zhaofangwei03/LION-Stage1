@@ -110,3 +110,32 @@ python T5_PINN_Poisson.py
 通过 Stage 1 的五个任务，初步掌握了 PyTorch 神经网络训练、自动微分、FFT 频域分析和有限差分求解的基本方法，并完成了一个最小 PINN 实验。
 
 通过 T4 与 T5，进一步理解了传统数值方法和物理信息神经网络求解微分方程的不同思路。
+## 实验结果预览
+
+### T1 — MNIST 图像分类
+
+训练损失曲线：
+
+![MNIST Loss Curve](T1_MNIST/results/loss_curve.png)
+
+训练与验证准确率曲线：
+
+![MNIST Accuracy Curve](T1_MNIST/results/accuracy_curve.png)
+
+### T3 — FFT 频域分析
+
+不同截止频率下的重建误差对比：
+
+![FFT MSE Comparison](T3_FFT/results_comparison/MSE_comparison.png)
+
+### T4 — Poisson 方程有限差分求解
+
+数值解与精确解的对比：
+
+![Poisson Solution Comparison](T4_Poisson/results/solution_comparison.png)
+
+### T5 — PINN 求解 Poisson 方程
+
+PINN 模型训练过程中各项损失的变化：
+
+![PINN Training Loss](T5_PINN_Poisson/results/loss_curve.png)
